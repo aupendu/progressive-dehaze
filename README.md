@@ -1,7 +1,7 @@
 # Iterative Dehazing 
 This is the PyTorch implementation for our paper:
 
-**Aupendu Kar, Sobhan Kanti Dhara, Debashis Sen, Prabir Kumar Biswas. Image Dehaing. [[Project Website]](https://aupendu.github.io/iterative-dehaze) [[PAPER]](https://aupendu.github.io/iterative-dehaze) **
+**Aupendu Kar, Sobhan Kanti Dhara, Debashis Sen, Prabir Kumar Biswas. Image Dehaing. [[Project Website]](https://aupendu.github.io/iterative-dehaze) [[PAPER]](https://aupendu.github.io/iterative-dehaze)
 
 ## Environment
 1. Python 3.6
