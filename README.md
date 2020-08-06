@@ -24,4 +24,4 @@ python test.py --dataroot ./datasets/dehazing --datatype real
 
 
 ## Contact
-Aupendu Kar: mailtoaupendu@gmail.com
+Aupendu Kar: mailtoaupendu[at]gmail[dot]com
