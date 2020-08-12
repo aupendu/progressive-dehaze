@@ -3,23 +3,9 @@ This is the PyTorch implementation for our paper:
 
 **Aupendu Kar, Sobhan Kanti Dhara, Debashis Sen, Prabir Kumar Biswas. Transmission Map and Atmospheric Light Guided Iterative Updater Network for Single Image Dehazing. [[Project Website]](https://aupendu.github.io/iterative-dehaze) [[PAPER]](https://aupendu.github.io/iterative-dehaze)
 
-## Environment
-1. Python 3.6
-2. PyTorch 1.0.0
-3. CUDA 9.2
-4. Ubuntu 16.04
+## Paper is under peer-review. Codes will be available once the paper under submission is accepted.
 
 
-## Test
-[Trained MODEL](https://aupendu.github.io/iterative-dehaze).
-
-```
-python test.py --dataroot ./datasets/dehazing --datatype synthetic
-```
-
-```
-python test.py --dataroot ./datasets/dehazing --datatype real
-```
 
 
 
