@@ -6,7 +6,7 @@ This is the PyTorch implementation for our paper:
 ## Data Preparation (NR-Haze Dataset)
 ### Training data 
 
-1.1 Download the Training Set from [Google Drive](https://drive.google.com/drive/folders/109EvJidm4gsJgFBhtWQuJRrzJBBDeic4?usp=sharing)
+1.1 Download the Training Set from [Dropbox](https://www.dropbox.com/sh/1e4wwlujz12ctbq/AACt7Loluuw7hgROXsJEgASua?dl=0)
 
 1.2 Put the dataset in `your_data_path` as follows:
 ```
