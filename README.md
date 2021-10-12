@@ -6,7 +6,7 @@ This is the PyTorch implementation for our paper:
 ## Data Preparation (NR-Haze Dataset)
 ### Training data 
 
-1.1 Download the Training Set from [Google Drive]()
+1.1 Download the Training Set from [Google Drive](https://drive.google.com/drive/folders/109EvJidm4gsJgFBhtWQuJRrzJBBDeic4?usp=sharing)
 
 1.2 Put the dataset in `your_data_path` as follows:
 ```
@@ -34,9 +34,9 @@ your_data_path
 Import `dataloader.py` to generate train pairs during training.
 
 ### Validation and Test data
-1.1 Download the Validation Set from [Google Drive]()
+1.1 Download the Validation Set from [Google Drive](https://drive.google.com/drive/folders/1peVM1RclTgD7-KXf6bR3R9NHtOcmy96v?usp=sharing)
 
-1.2 Download the 7 Test Sets from [Google Drive]()
+1.2 Download the 7 Test Sets from [Google Drive](https://drive.google.com/drive/folders/1CNjLD4BoEpooW6CveqF4u3-wxQEiZTLz?usp=sharing)
 
 ## Contact
 Aupendu Kar: mailtoaupendu[at]gmail[dot]com
