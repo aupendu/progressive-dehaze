@@ -31,7 +31,6 @@ your_data_path
                             ├── .....
                             └── 8961.mat
 ```                          
-Import `dataloader.py` to generate train pairs during training.
 
 ### Validation and Test data
 1.1 Download the Validation Set from [Google Drive](https://drive.google.com/drive/folders/1peVM1RclTgD7-KXf6bR3R9NHtOcmy96v?usp=sharing)
