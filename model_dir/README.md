@@ -1,2 +1,2 @@
 
-Put models in this folder
+## Put pre-trained models in this folder
