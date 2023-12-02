@@ -5,10 +5,10 @@ This is the PyTorch implementation for our paper:
 
 ## Test Codes
 To perform Image Dehazing
-``
+```
 python test.py --datatype real --modelx IPUDN_IHaze \
 --testfolder realdata
-``
+```
 
 * Give test image set path through ``--testfolder`` argument
 * Select model through ``--modelx`` argument
