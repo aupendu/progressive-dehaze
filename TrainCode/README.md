@@ -32,17 +32,57 @@ your_data_path
                             └── 8961.mat
 ```                          
 
-### Validation and Test data
-1.1 Download the Validation Set from [Google Drive](https://drive.google.com/drive/folders/1peVM1RclTgD7-KXf6bR3R9NHtOcmy96v?usp=sharing)
+### Validation data
+1.1 Download the Validation Set from [Google Drive](https://drive.google.com/drive/folders/1peVM1RclTgD7-KXf6bR3R9NHtOcmy96v?usp=sharing) and put it in `data` folder
 
-1.2 Download the 7 Test Sets from [Google Drive](https://drive.google.com/drive/folders/1CNjLD4BoEpooW6CveqF4u3-wxQEiZTLz?usp=sharing)
 
-## Test Codes
-``python test.py --datatype real --modelx IPUDN_IHaze --testfolder realdata`` to perform single image dehazing
+## Training Codes
 
-* Give test image set path through ``--testfolder`` argument
-* Select model through ``--modelx`` argument
-* Select data type through ``--datatype`` argument, ``real`` for Real and ``synthetic`` for Synthetic Haze data
+Train Transmission Map Estimation Model
+```
+python main.py --train_t --loss 1*SSIM\
+                --transmodel Transmission  \
+                --batch_size 16 --test_every 2000 --epochs 250 \
+                --lr 1e-4 --gamma 0.5 --decay 50+100+150+200 \
+                --exp_name EX1 --patch_size 224 \
+                --trainfolder NR-Indoor+NR-Outdoor --b_min 0.2+2.0 --b_max 0.8+5.0 \
+                --valset NR_Indoor_Outdoor --valfolder NR-Indoor+NR-Outdoor \
+                --b_minVal  0.2+2.0 --b_maxVal 0.8+5.0 \
+                --A_vary 40 --A_min 0.3 --A_max 1.0
+```
+
+Train Atmospheric Light Estimation Model
+```
+python main.py --train_a --loss 1*MSE \
+                --atmmodel Atmospheric \
+                --batch_size 16 --test_every 2000 --epochs 250 \
+                --lr 1e-4 --gamma 0.5 --decay 50+100+150+200 \
+                --exp_name EX1 --patch_size 224 \
+                --trainfolder NR-Indoor+NR-Outdoor --b_min 0.2+2.0 --b_max 0.8+5.0 \
+                --valset NR_Indoor_Outdoor --valfolder NR-Indoor+NR-Outdoor \
+                --b_minVal  0.2+2.0 --b_maxVal 0.8+5.0 \
+                --A_vary 40 --A_min 0.3 --A_max 1.0
+```
+Train Dehazing Model
+```
+python main.py --train_h --loss 1*L1 \
+                --transmodel Transmission --transmodel_pt model_dir/EX1_Transmission_1*SSIM_bestSSIM.pth.tar \
+                --atmmodel Atmospheric --atmmodel_pt model_dir/EX1_Atmospheric_1*MSE_bestMSE.pth.tar \
+                --hazemodel IPUDN_IHaze --iter 6 \
+                --batch_size 2 --test_every 2000 --epochs 500 \
+                --lr 1e-4 --gamma 0.5 --decay 100+200+300+400 \
+                --exp_name EX1 --patch_size 224 \
+                --trainfolder NR-Indoor+NR-Outdoor --b_min 0.2+2.0 --b_max 0.8+5.0 \
+                --valset NR_Indoor_Outdoor --valfolder NR-Indoor+NR-Outdoor \
+                --b_minVal  0.2+2.0 --b_maxVal 0.8+5.0 \
+                --A_vary 40 --A_min 0.3 --A_max 1.0
+```
+Fine-tune the whole framework together
+```
+python finetune.py
+```
+
+
 
 ## Contact
 Aupendu Kar: mailtoaupendu[at]gmail[dot]com
