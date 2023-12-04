@@ -37,12 +37,8 @@ your_data_path
 
 1.2 Download the 7 Test Sets from [Google Drive](https://drive.google.com/drive/folders/1CNjLD4BoEpooW6CveqF4u3-wxQEiZTLz?usp=sharing)
 
-## Test Codes
-``python test.py --datatype real --modelx IPUDN_IHaze --testfolder realdata`` to perform single image dehazing
-
-* Give test image set path through ``--testfolder`` argument
-* Select model through ``--modelx`` argument
-* Select data type through ``--datatype`` argument, ``real`` for Real and ``synthetic`` for Synthetic Haze data
+## Training Codes are in TrainCode folder
+## Test Codes are in TestCode folder
 
 ## Contact
 Aupendu Kar: mailtoaupendu[at]gmail[dot]com
