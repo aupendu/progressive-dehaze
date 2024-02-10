@@ -1,7 +1,7 @@
 # Progressive Update Guided Interdependent Networks for Single Image Dehazing
 This is the PyTorch implementation for our paper:
 
-**Aupendu Kar, Sobhan Kanti Dhara, Debashis Sen, Prabir Kumar Biswas. Progressive Update Guided Interdependent Networks for Single Image Dehazing. [[Project Website]](https://aupendu.github.io/iterative-dehaze) [[PAPER]](https://arxiv.org/abs/2008.01701)
+**Aupendu Kar, Sobhan Kanti Dhara, Debashis Sen, Prabir Kumar Biswas. Progressive Update Guided Interdependent Networks for Single Image Dehazing. [[Project Website]](https://aupendu.github.io/progressive-dehaze) [[PAPER]](https://arxiv.org/abs/2008.01701)
 
 ## Data Preparation (NR-Haze Dataset)
 ### Training data 
