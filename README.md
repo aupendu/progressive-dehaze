@@ -37,8 +37,9 @@ your_data_path
 
 1.2 Download the 7 Test Sets from [Google Drive](https://drive.google.com/drive/folders/1CNjLD4BoEpooW6CveqF4u3-wxQEiZTLz?usp=sharing)
 
-## Training Codes are in TrainCode folder
-## Test Codes are in TestCode folder
+## Training Codes are in TrainCodes folder
+## Test Codes are in TestCodes folder
 
 ## Contact
 Aupendu Kar: mailtoaupendu[at]gmail[dot]com
+
